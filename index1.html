@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Online Registration</h1>
+        <p>Fill in your details to apply</p>
+
+        <form action="submit.php" method="POST" id="regForm">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="tel" name="phone" placeholder="Phone Number"
+                   pattern="[0-9]{10}" title="Enter 10 digit phone number" required>
+
+            <select name="course" required>
+                <option value="">Select Course</option>
+                <option>BCA</option>
+                <option>B.E</option>
+                <option>B.Tech</option>
+                <option>B.Sc</option>
+                <option>MCA</option>
+            </select>
+
+            <textarea name="address" placeholder="Your Address" required></textarea>
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
